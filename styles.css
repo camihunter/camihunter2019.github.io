@@ -19,9 +19,10 @@ footer {
   head {
       font-size: 3em;
   }
-  head img {
+  #profile_image {
     position: absolute;
     top: 0px;
     border: solid #2D2D2D;
     width: 24%;
+    flex: 1 0 15em;
   }
