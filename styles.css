@@ -24,5 +24,8 @@ footer {
   #profile_image {
     position: absolute;
     max-width: 100%
+    top: 15px;
+    flex: wrap;
     float: right;
   }
+
