@@ -3,7 +3,8 @@ body {
     font-size: 16px;
 }
 head, footer {
-    padding: 4;
+    padding: 4em;
+    color: lightblue
 }
 footer {
     margin: 0 1em;
