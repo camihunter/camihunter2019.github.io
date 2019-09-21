@@ -4,7 +4,8 @@ body {
 }
 head, footer {
     padding: 4em;
-    color: lightblue
+    background-color: lightblue;
+    border-radius: 25px;
 }
 footer {
     margin: 0 1em;
