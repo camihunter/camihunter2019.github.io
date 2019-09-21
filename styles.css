@@ -19,3 +19,9 @@ footer {
   head {
       font-size: 3em;
   }
+  head img {
+    position: absolute;
+    top: 0px;
+    border: solid #2D2D2D;
+    width: 24%;
+  }
