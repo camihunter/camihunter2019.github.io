@@ -23,7 +23,6 @@ footer {
   }
   #profile_image {
     position: absolute;
-    width: 50px;
-    flex: wrap;
+    max-width: 100%
     float: right;
   }
