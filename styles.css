@@ -24,6 +24,7 @@ footer {
       font-size: 3em;
   }
   #profile_image {
-    width: 20%;
+    position: absolute;
+    width: 50px;
     float: right;
   }
