@@ -4,7 +4,7 @@ body {
     width: 85%;
     margin: 0 auto;
 }
-head h1, footer {
+header h1, footer {
     padding: 4em;
     background-color: #056b8a;
     color: #FFFFFF;
@@ -20,7 +20,7 @@ footer {
     padding: 0 1.1em;
     font-size: .9em;
   }
-  head {
+  header {
       font-size: 3em;
   }
   #profile_image {
