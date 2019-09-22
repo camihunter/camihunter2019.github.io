@@ -15,7 +15,7 @@ header,
 main,
 footer {
     margin: 1.25rem;
-    max-width: 760px;
+    max-width: 860px;
 }
 
 #profile_image {
@@ -28,7 +28,7 @@ header,
 footer {
     background-color: #056b8a;
     color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -42,4 +42,8 @@ a {
 
 footer {
     margin-top: 100px;
+}
+
+main h2 {
+    border-bottom: 3px solid #D38F8F;
 }
