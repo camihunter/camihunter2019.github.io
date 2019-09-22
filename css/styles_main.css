@@ -20,8 +20,8 @@ footer {
 
 #profile_image {
     float: right;
-    margin-left: 40px;
-    margin-top: -50px;
+    padding: 20px;
+    margin: -70px 10px 0 40px;
 
 }
 
@@ -36,7 +36,9 @@ footer {
 header {
     padding: 15px 0;
 }
-
+header h1 {
+    padding-right:  310px;
+}
 a {
     color: #000C1F;
 }
@@ -46,7 +48,7 @@ a:hover {
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 main h2 {
