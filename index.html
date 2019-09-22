@@ -2,32 +2,43 @@
 <html lang="en">
 
 <head>
-    <title>CIT 230 Class Index page</title>
+    <title>Cami's CIT 230 Class Index page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles.css">
+    <meta name="description"
+        content="The homepage for Cami Hunter's CIT 230 Web Frontend Development class assignments at Brigham Young University-Idaho. It includes links to her assignment projects.">
+    <link rel="stylesheet" href="css/styles_main.css">
 </head>
 
 <body>
-
     <header>
-        <h1>Cami Hunter</h1>
+        <div>
+            <h1>Cami Hunter</h1>
+        </div>
         <div id="profile_image">
-            <img src="images/cami_photo.jpg" alt="Photo of Cami">
+            <img src="images/Cami_tn.jpg" alt="Photo of Cami">
         </div>
     </header>
     <main>
-        <h3>CIT 230: Assignment Portal</h3>
-        <ul>
-            <li>Lesson 02: <a href="lesson2.html">Assignment Link</a></li>
-            <li>Lesson 03: <a href="lesson3.html">Assignment Link</a></li>
-            <li>Lesson 04: <a href="lesson4_link1">Link | </a></li><a href="lesson4_link2">Link</a>
-        </ul>
+        <h2>CIT 230: Assignment Portal</h2>
+        <nav>
+            <ul>
+                <li>Lesson 02: <a href="index.html">Assignment Link</a></li>
+                <li>Lesson 03: <a href="index.html">Assignment Link</a></li>
+                <li>Lesson 04: <a href="index.html">Link | </a><a href="index.html">Link</a></li>
+            </ul>
+        </nav>
     </main>
     <footer>
-        &copy; 2020 | Cami Hunter | Utah | <a href="" </a> <br>
-            <p>date</p>
+        &copy; <span id="currentyear"></span> | Cami Hunter | Utah | <a href="https://www.byui.edu/online">BYUI Online
+            Learning</a>
+        <p>Last updated: <span id="modified">
+            </span> </p>
     </footer>
+    <script src="js/lastmodified.js">
+    </script>
+    <script src="js/currentyear.js"></script>
+
 </body>
 
 </html>
