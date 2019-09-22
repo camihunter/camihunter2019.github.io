@@ -15,13 +15,14 @@ header,
 main,
 footer {
     margin: 1.25rem;
-    max-width: 860px;
+    max-width: 80%;
 }
 
 #profile_image {
     float: right;
     margin-left: 40px;
     margin-top: -50px;
+
 }
 
 header,
