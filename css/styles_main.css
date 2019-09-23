@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter|Lexend+Exa|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans&display=swap');
 
 body {
     line-height: 1.6;
     font-size: 16px;
-    width: 95%;
+    width: 95%%;
     margin: 0 auto;
     font-family:'Open Sans', sans-serif;
 }
@@ -13,12 +13,12 @@ main {
     margin-left: 30px;
 }
 
-h1 {
-    font-family: 'Lexend Exa', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bitter', serif;
 }
 
-h2 {
-    font-family: 'Bitter', serif;
+h1 {
+    font-variant: small-caps;
 }
 
 header,
@@ -41,6 +41,7 @@ footer {
     color: #FFFFFF;
     border-radius: 15px;
     text-align: center;
+  
 }
 
 header {
@@ -48,7 +49,6 @@ header {
 }
 header h1 {
     padding-right:  310px;
-    font-size: 2em;
 }
 a {
     color: #000C1F;
@@ -60,6 +60,8 @@ a:hover {
 
 footer {
     margin-top: 150px;
+    padding: 14px 0 1px 0;
+    line-height: 1;
 }
 
 main h2 {
