@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Lexend+Exa|Open+Sans&display=swap');
 
 body {
     line-height: 1.6;
     font-size: 16px;
     width: 95%;
     margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Open Sans', sans-serif;
 }
 
 main {
     text-decoration: none;
     margin-left: 30px;
+}
+
+h1 {
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
 }
 
 header,
@@ -40,6 +48,7 @@ header {
 }
 header h1 {
     padding-right:  310px;
+    font-size: 2em;
 }
 a {
     color: #000C1F;
@@ -58,7 +67,4 @@ main h2 {
 }
 footer a {
     color: white;
-}
-h1 {
-    font-family: 'Open Sans', sans-serif;
 }
