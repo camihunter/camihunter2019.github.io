@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Shadows+Into+Light&display=swap');
+
 body {
     line-height: 1.6;
     font-size: 16px;
@@ -56,4 +58,7 @@ main h2 {
 }
 footer a {
     color: white;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
 }
