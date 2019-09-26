@@ -21,25 +21,15 @@ h1 {
     font-variant: small-caps;
 }
 
-header,
-main,
-footer {
-    margin: 1.25rem auto;
-    max-width: 80%;
-}
-
 #profile_image {
-    float: right;
     padding: 20px;
-    margin: -70px 10px 0 40px;
-
+    margin: 0px 10px 0 10px;
 }
 
 header,
 footer {
     background-color: #056b8a;
     color: #FFFFFF;
-    border-radius: 15px;
     text-align: center;
   
 }
@@ -47,9 +37,7 @@ footer {
 header {
     padding: 15px 0;
 }
-header h1 {
-    padding-right:  310px;
-}
+
 a {
     color: #000C1F;
 }
@@ -59,8 +47,8 @@ a:hover {
 }
 
 footer {
-    margin-top: 150px;
-    padding: 14px 0 1px 0;
+    margin-top: 50px;
+    padding: 20px;
     line-height: 1;
 }
 
