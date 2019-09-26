@@ -54,6 +54,7 @@ footer {
 
 main h2 {
     border-bottom: 3px solid #F48FB1;
+    margin-right: 30px;
 }
 footer a {
     color: white;
