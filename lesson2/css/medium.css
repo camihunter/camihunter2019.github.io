@@ -7,4 +7,15 @@
     section:nth-child(3) {
         grid-column: span 2;
     }
+
+    body {
+        width: 90%;
+    }
+
+    header,
+    main,
+    footer {
+        margin: 0 auto;
+        max-width: 90%;
+    }
 }
