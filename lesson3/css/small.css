@@ -2,7 +2,7 @@
 
 body {
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
@@ -10,41 +10,76 @@ body {
 
 header,
 footer {
-    background-color: blue;
+    background-color: #bCE7FD;
     color: white;
-    display: flex;
     flex-flow: column;
-    align-items: center;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+}
+
+header h1,
+footer {
+    display: flex;
+}
+
+h1 {
+    justify-content: center;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #212831;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: absolute;
-    justify-content: space-evenly;
+    overflow: hidden;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 1px;
-
-}
-
-nav li a {
+nav a {
     text-decoration: none;
     display: block;
     min-width: 140px;
-    height: 50px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-    background: #2f3036;
 }
 
 main {
     margin: 10%;
+}
+section img {
+    max-width: 100%;
+    
+}
+
+@media only screen and (min-width: 37.5em) {
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer {
+        flex-flow: nowrap;
+    }
+
+    footer a {
+        padding: 25px;
+    }
+
+  
+
+
+
 }
