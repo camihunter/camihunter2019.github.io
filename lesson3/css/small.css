@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+body {
+    line-height: 1.5;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header,
+footer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+}
+
+main {
+    margin: 10%;
+}
