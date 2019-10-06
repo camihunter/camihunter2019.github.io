@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&C7Roboto&display=swap');
 
 body {
     line-height: 1.5;
     font-size: 16px;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header,
 footer {
     background-color: #bCE7FD;
-    color: white;
+    color: #212831;
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -24,6 +24,12 @@ footer {
 
 h1 {
     justify-content: center;
+    padding-top: 30px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
 header,
@@ -55,27 +61,51 @@ nav a {
     color: #fff;
 }
 
+nav a:hover {
+    background-color: #d27f0f;
+}
+
 main {
     margin: 10%;
 }
+
+#logoexample {
+    max-width: 30%;
+}
+
 section img {
     max-width: 100%;
-    
+    margin: -20px;
 }
+
+.personaimages {
+    max-width: 25%;
+    margin-left: 5%;
+}
+
+
 
 @media only screen and (min-width: 37.5em) {
 
     nav ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        font-size: 13px;
     }
 
+    body {
+        width: 90%;
+    }
     footer {
         flex-flow: nowrap;
     }
 
     footer a {
         padding: 25px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
     }
 
   
