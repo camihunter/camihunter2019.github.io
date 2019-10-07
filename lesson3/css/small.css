@@ -65,6 +65,10 @@ nav a:hover {
     background-color: #d27f0f;
 }
 
+li {
+    border-top:#bCE7FD solid .5px;
+}
+
 main {
     margin: 10%;
 }
@@ -79,38 +83,10 @@ section img {
 }
 
 .personaimages {
-    max-width: 25%;
+    max-width: 40%;
     margin-left: 5%;
+    padding: 15px 0;
 }
 
 
 
-@media only screen and (min-width: 37.5em) {
-
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        font-size: 13px;
-    }
-
-    body {
-        width: 90%;
-    }
-    footer {
-        flex-flow: nowrap;
-        padding: 0 2em;
-    }
-
-    footer a {
-        padding: 25px;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-  
-
-
-
-}

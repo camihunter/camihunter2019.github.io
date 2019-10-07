@@ -1,0 +1,12 @@
+@media (min-width: 60em) {
+
+    .personaimages {
+        max-width: 25%;
+        margin-left: 5%;
+    }
+
+    main {
+        margin: 15%;
+    }
+
+}
