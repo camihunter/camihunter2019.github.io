@@ -98,6 +98,7 @@ section img {
     }
     footer {
         flex-flow: nowrap;
+        padding: 0 2em;
     }
 
     footer a {
