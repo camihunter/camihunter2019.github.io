@@ -29,10 +29,26 @@ footer {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.headings {
+	display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: #000000;
+	margin: -20px 0 0 20px;
+	font-size: .9rem;
 }
 
 #logo {
-    width: 100px;
+    width: 120px;
 }
 
 nav {
@@ -70,7 +86,7 @@ nav {
 	display: block;
 }
 
-section div {
+main div {
     margin: 10px 0;
     padding: 30px 10px;
     border: dotted;
