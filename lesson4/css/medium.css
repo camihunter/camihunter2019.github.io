@@ -1,0 +1,11 @@
+@media only screen and (min-width: 37.5em) {
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+		display: block;
+		flex: 1 1 100%;
+    }
+    
+}
