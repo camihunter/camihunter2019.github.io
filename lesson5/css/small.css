@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&C7Roboto&display=swap');
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+footer {
+    background-color: #BCE7FD;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.headings {
+	display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: #000000;
+	margin: -20px 0 0 20px;
+	font-size: .9rem;
+}
+
+#logo {
+    width: 120px;
+}
+
+nav {
+    background-color: #212831;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a:hover {
+    background-color: #d27f0f;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.responsive li {
+	display: block;
+}
+
+main div {
+    margin: 10px 0;
+    padding: 30px 10px;
+    border: dotted;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+
+}
