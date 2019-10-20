@@ -34,17 +34,17 @@ header {
 }
 
 .headings {
-	display: flex;
+    display: flex;
     flex-direction: column;
     font-size: 1.2rem;
 }
 
 .m {
-	font-style: italic;
-	letter-spacing: 1pt;
-	color: #000000;
-	margin: -20px 0 0 20px;
-	font-size: .9rem;
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #000000;
+    margin: -20px 0 0 20px;
+    font-size: .9rem;
 }
 
 #logo {
@@ -65,11 +65,11 @@ nav {
 }
 
 .navigation li:first-child {
-	display: block;
+    display: block;
 }
 
 .navigation li {
-	display: none;
+    display: none;
 }
 
 .navigation a:hover {
@@ -83,13 +83,32 @@ nav {
 }
 
 .responsive li {
-	display: block;
+    display: block;
 }
 
 main div {
     margin: 10px 0;
-    padding: 30px 10px;
-    border: dotted;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#heroimage {
+    width: 100%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 4rem;
+    left: 20px;
+    width: 25%;
+    height: 175px;
+    line-height: .5;
+    padding: 5px;
+    background: #fed766;
 }
 
 footer {

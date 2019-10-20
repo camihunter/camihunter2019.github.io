@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Cami's CIT 230 Class Elemental Weather Homepage</title>
     <meta charset="utf-8">
@@ -12,12 +13,14 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
+
 <body>
     <header>
-        <img id="logo" src="images/wind_icon.svg" alt="blue wind vector drawing with three simple lines lines representing wind blowing">
+        <img id="logo" src="images/wind_icon.svg"
+            alt="blue wind vector drawing with three simple lines lines representing wind blowing">
         <section class="headings">
-        <h1>Elemental Weather</h1>
-        <div class="m">"Keeping you updated on Idaho's weather"</div>
+            <h1>Elemental Weather</h1>
+            <div class="m">"Keeping you updated on Idaho's weather"</div>
         </section>
     </header>
 
@@ -35,7 +38,19 @@
 
     <main>
         <section>
-            <div>Hero Image/Weather Summary</div>
+            <div class="herodiv">
+                <h2>Preston Idaho</h2>
+                <img id="heroimage" src="images/prestonwinter.jpg"
+                    alt="a river leading the way to a small town covered in snow with mountains in the background">
+                <div class="weathersummary">
+                    <h3>Weather Summary</h3><br>
+                    <p>Currently: Sunny</p>
+                    <p>Temperature: 76 &deg; F</p>
+                    <p>Humidity: 69%</p>
+                    <p>Precipitation: 0 inches</p>
+                    <p>Wind Speed: 5 mph</p>
+                </div>
+                div>
         </section>
         <section>
             <div>5 Day Forecast</div>
@@ -49,11 +64,12 @@
     </main>
 
     <footer>
-       <span id="date">
+        <span id="date">
         </span>
     </footer>
     <script src="js/date.js">
     </script>
     <script src="js/toggle.js"></script>
 </body>
+
 </html>
