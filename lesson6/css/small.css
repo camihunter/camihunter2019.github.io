@@ -51,6 +51,8 @@ header {
     width: 120px;
 }
 
+/* Navigation Bar */
+
 nav {
     background-color: #212831;
     display: flex;
@@ -74,13 +76,13 @@ nav {
 
 .navigation a:hover {
     background-color: #d27f0f;
-    padding: 4px;
 }
 
 .navigation a {
     display: block;
     text-decoration: none;
     color: #ffffff;
+    
 }
 
 .navigation a:active {
@@ -90,10 +92,16 @@ nav {
 .responsive li {
     display: block;
 }
+/*End Nav Bar */
 
 main div {
     margin: 10px 0;
 }
+
+section {
+    padding: 20px 0;
+}
+/* Banner Section */
 
 .herodiv {
     position: relative;
@@ -113,7 +121,29 @@ main div {
     padding: 5px;
     background: ;
     background: radial-gradient(#fed766, #d27f0f);
+    opacity: .9;
 }
+
+/* Five Day Forcast Section */
+
+/* Article Section */
+
+.weatherarticle {
+    background-color: #fed86688;
+    opacity: 10%;
+    padding: 10px 20px;
+}
+
+.weatherarticle img {
+    max-width: 100%;
+}
+
+/* Contact Info */
+.contactinfo {
+    clear: both;
+}
+
+/* Footer */
 
 footer {
     padding: 20px 0;

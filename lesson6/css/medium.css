@@ -16,5 +16,13 @@
         margin: 0 100px;
     }
 
+    .weatherarticle {
+        padding: 10px 40px;
+    }
+
+    .weatherarticle img {
+        max-width: 40%;
+        box-shadow: 5px 5px 15px grey;
+    }
     
 }
