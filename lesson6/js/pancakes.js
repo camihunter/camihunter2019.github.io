@@ -1,2 +1,1 @@
-const now = new Date();
-const pancakes = now.getDay() === '6' ? "Testing" : null;
+const pancakes = new Date().getDay() === '6' ? "Saturday" : null;
