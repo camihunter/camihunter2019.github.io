@@ -1,4 +1,8 @@
 @media only screen and (min-width: 37.5em) {
+    main, footer {
+        margin: 0 100px;
+    }
+    
     .navigation {
         display: flex;
         
@@ -9,11 +13,35 @@
 	.navigation li {
 		display: block;
         flex: 1 1 100%;
-        margin: 0 20px;
+
 	}
 
     main, footer {
-        margin: 0 100px;
+        margin: 0 50px;
+    }
+
+    .forcast {
+        display: block;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    table {
+        border: 1px #212831;
+        border-collapse: collapse;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .forcast th {
+        height: 30px;
+        background-color: #1e6382;
+        color: #ffffff;
+    }
+    
+    .forcast td {
+        height: 60px;
     }
 
     .weatherarticle {
@@ -23,6 +51,15 @@
     .weatherarticle img {
         max-width: 40%;
         box-shadow: 5px 5px 15px grey;
+    }
+
+    .contactinfo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .comtactinfo img {
+        max-width: 100%;
     }
     
 }

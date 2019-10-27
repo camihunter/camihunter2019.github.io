@@ -61,10 +61,17 @@ nav {
     align-items: center;
 }
 
+.navigation a.active {
+    background-color: #fed766;
+    color: #212831;
+}
 .navigation {
     list-style-type: none;
-    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
+
 
 .navigation li:first-child {
     display: block;
@@ -82,13 +89,8 @@ nav {
     display: block;
     text-decoration: none;
     color: #ffffff;
-    
 }
 
-.navigation a:active {
-    text-decoration: underline;
-    color: #ffffff;
-}
 .responsive li {
     display: block;
 }
@@ -119,12 +121,15 @@ section {
     left: 20px;
     line-height: .5;
     padding: 5px;
-    background: ;
     background: radial-gradient(#fed766, #d27f0f);
     opacity: .9;
 }
 
 /* Five Day Forcast Section */
+
+.forcast {
+    display:none;
+}
 
 /* Article Section */
 
@@ -134,6 +139,8 @@ section {
     padding: 10px 20px;
 }
 
+
+
 .weatherarticle img {
     max-width: 100%;
 }
@@ -141,7 +148,15 @@ section {
 /* Contact Info */
 .contactinfo {
     clear: both;
+    display: block;
+    text-align: center;
+    background-color: #fed86688; 
 }
+
+div .prestonmap {
+    display: none;
+}
+
 
 /* Footer */
 

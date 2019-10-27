@@ -16,6 +16,7 @@
 
 <body>
     <header>
+        <span id="pancakes"></span>
         <img id="logo" src="images/wind_icon.svg"
             alt="blue wind vector drawing with three simple lines lines representing wind blowing">
         <section class="headings">
@@ -28,7 +29,7 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a href="#" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -52,7 +53,30 @@
                 </div>
         </section>
         <section>
-            <div>5 Day Forecast</div>
+            <div class="forcast">
+                <h3>5 Day Forecast</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&degF</td>
+                            <td>89&degF</td>
+                            <td>89&degF</td>
+                            <td>89&degF</td>
+                            <td>89&degF</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
         </section>
         <section>
             <div class="weatherarticle">
@@ -72,7 +96,15 @@
             </div>
         </section>
         <section class="contactinfo">
-            <div>Contact Information</div>
+            <div>
+                <h3>Contact Information</h3>
+                <p>City of Preston<br>
+                    70 West 400 South<br>
+                    Preston, ID 83267</p>
+            </div>
+            <div class="prestonmap">
+                <img src="images/preston_map.png">
+            </div>
         </section>
     </main>
 
@@ -80,9 +112,9 @@
         <span id="date">
         </span>
     </footer>
-    <script src="js/date.js">
-    </script>
+    <script src="js/date.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/pancakes.js"></script>
 </body>
 
 </html>
