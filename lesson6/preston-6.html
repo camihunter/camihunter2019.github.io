@@ -41,8 +41,11 @@
         <section>
             <div class="herodiv">
                 <h2>Preston Idaho</h2>
-                <img id="heroimage" src="images/prestonwinter.jpg"
-                    alt="a river leading the way to a small town covered in snow with mountains in the background">
+                <picture>
+                    <source src="images/herolesson6_650px.jpg" media="(min=width:600px) and (max-width: 1023px)">
+                        <source src="images/herolesson6_650px.jpg" media="(min=width:1024px)">
+                    <img id="heroimage" src="images/herolesson6_300px.jpg" alt="green grass with a blue sky">
+                </picture>
                 <div class="weathersummary">
                     <h3>Weather Summary</h3><br>
                     <p>Currently: Sunny</p>
@@ -80,7 +83,7 @@
         </section>
         <section>
             <div class="weatherarticle">
-                <h3>Fall Turning to Winter</h3>
+                <h3>Goodbye Fall</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Vulputate ut pharetra sit amet aliquam id. Morbi quis commodo odio aenean
@@ -98,7 +101,7 @@
         <section class="contactinfo">
             <div>
                 <h3>Contact Information</h3>
-                <p>City of Preston<br>
+                <p>Elemental Weather<br>
                     70 West 400 South<br>
                     Preston, ID 83267</p>
             </div>
@@ -115,6 +118,17 @@
     <script src="js/date.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/pancakes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Montserrat', 'Roboto'
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>
