@@ -61,5 +61,8 @@
     .comtactinfo img {
         max-width: 100%;
     }
+    .prestonmap {
+        display: block;
+    }
     
 }
