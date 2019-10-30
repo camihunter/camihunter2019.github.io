@@ -1,9 +1,9 @@
 function windchill() {
-    var temp = document.getElementById('hightemp').value);
-    var windSpeed= document.getElementsByClassName('windspeed').value);
+    var temp = parseFloat(document.getElementById('hightemp').textContent);
+    var windSpeed= parseFloat(document.getElementsById('windspeed').textContent);
     var result= windChill(temp, windSpeed);
 
-    document.getElementById('windchill').innerHTML = result;
+    document.getElementById('windchill').textContent = result;
 }
 
 function windChill(tempF, speed) {
