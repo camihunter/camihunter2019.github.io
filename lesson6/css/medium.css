@@ -20,7 +20,7 @@
         margin: 0 50px;
     }
 
-    .forcast {
+    .forecast {
         display: block;
         width: 100%;
         align-items: center;
@@ -28,19 +28,21 @@
     }
     
     table {
-        border: 1px #212831;
+        border: 1px solid #212831;
         border-collapse: collapse;
         width: 70%;
         margin: 0 auto;
     }
     
-    .forcast th {
+    .forecast th {
+        border: 1px solid #212831;
         height: 30px;
         background-color: #1e6382;
         color: #ffffff;
     }
     
-    .forcast td {
+    .forecast td {
+        border: 1px solid #212831;
         height: 60px;
     }
 

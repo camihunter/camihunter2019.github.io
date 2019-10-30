@@ -44,24 +44,29 @@
                 <!-- <source src="images/herolesson6_650px.jpg" media="(min=width:599px) and (max-width: 1023px)">
                         <source src="images/herolesson6_650px.jpg" media="(min=width:1024px)">-->
                 <picture>
-                    <img id="heroimage" src="images/herolesson6_650px.jpg" alt="green grass with a blue sky" srcset="images/herolesson6_300px.jpg 300w,
-                    images/herolesson6_400px.jpg 400w,
+                    <img id="heroimage" src="images/herolesson6_650px.jpg" alt="green grass with a blue sky" 
+                    srcset="images/herolesson6_300px.jpg 300w,
+                    images/herolesson6_400px.jpg 600w,
                         images/herolesson6_650px.jpg 1200w,
-                        images/herolesson6_1300px.jpg 2048w">
+                        images/herolesson6_1300px.jpg 2048w"
+                        sizes="(max-width: 400px) 400px,
+                                (max-width: 750px) 650px,
+                                1300px">
                 </picture>
                 <div class="weathersummary">
                     <h3>Weather Summary</h3><br>
                     <p>Currently: Sunny</p>
-                    <p>High <span class="hightemp"></span> &deg F</p>
-                    <p>Wind Chill: <span class="windchill">&deg F</span></span> </p>
+                    <p>High <span class="hightemp">50</span> &deg;F</p>
+                    <p>Wind Chill: <span class="windchill">&deg;F</span></p>
                     <p>Humidity: 69%</p>
                     <p>Wind Speed: <span class="windspeed"></span> mph</p>
                 </div>
+            </div>
         </section>
         <section>
-            <div class="forcast">
+            <div class="forecast">
                 <h3>5 Day Forecast</h3>
-                <table border="1">
+                <table>
                     <thead>
                         <tr>
                             <th>Wed</th>
@@ -73,11 +78,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>89&degF</td>
-                            <td>89&degF</td>
-                            <td>89&degF</td>
-                            <td>89&degF</td>
-                            <td>89&degF</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
                         </tr>
                     </tbody>
                 </table>
@@ -109,7 +114,7 @@
                     Preston, ID 83267</p>
             </div>
             <div class="prestonmap">
-                <img src="images/preston_map.png">
+                <img src="images/preston_map.png" alt="map of Preston Idaho">
             </div>
         </section>
     </main>
