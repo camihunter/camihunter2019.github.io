@@ -48,11 +48,14 @@
 
     .weatherarticle {
         padding: 10px 40px;
+        margin-bottom: 2em;
     }
 
     .weatherarticle img {
         max-width: 40%;
         box-shadow: 5px 5px 15px grey;
+        float: right;
+        margin: 0 0 20px 10px;
     }
 
     .contactinfo {
