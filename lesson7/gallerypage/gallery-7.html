@@ -1,0 +1,115 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Cami's CIT 230 Class Elemental Weather Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="The gallery page for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="images/wind_icon.svg"
+                alt="blue wind vector drawing with three simple lines lines representing wind blowing">
+            <section class="headings">
+                <h1>Elemental Weather</h1>
+                <div class="m">"Keeping you updated on Idaho's weather"</div>
+            </section>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="../../lesson6/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Gallery Page</h2>
+            <section class="imagegallery">
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/eyeofthestorm.jpg"
+                        alt="view from space of a eye of the storm">
+                    <figcaption>A view from space of the eye of the storm</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/blueskygrass.jpg"
+                        alt="blue sky with white clouds and green grass below">
+                    <figcaption>A pleasant sunny day with perfect weather for a picnic</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/fog.jpg"
+                        alt="thick fog covering a city with skyscrapers poking out">
+                    <figcaption>Thick fog covers this city</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/frost.jpg" alt="frost crystals up close">
+                    <figcaption>The beauty of frost crystals</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/sunnyroad.jpg"
+                        alt="a long road in the desert stretching across a flat red landscape and a sunny sky">
+                    <figcaption>This hot, sunny road is waiting for your next road trip</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/foggymountain.jpg"
+                        alt="a blue mountain covered in fog">
+                    <figcaption>This tall mountain is being enveloped with fog</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/lightening.jpg"
+                        alt="lightening striking the ground and making the sky a light purple">
+                    <figcaption>This night sky is lit up by lightening</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/snowfence.jpg"
+                        alt+="a lone wooden fence surrounded by a white snowy winter">
+                    <figcaption>The peace and tranquility that comes from a fresh snow storm</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/raindropsstreet.jpg"
+                        alt="a close up of rain drops landing on a puddled street">
+                    <figcaption>Rain filled the streets making a wet journey for travelers</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/wheatblowing.jpg"
+                        alt="wheat blowing in the wind">
+                    <figcaption>Light breeze rustles through the wheat fields</figcaption>
+                </figure>
+            </section>
+        </main>
+
+
+        <footer>
+            <span id="date">
+            </span>
+        </footer>
+        <script src="js/progressiveload.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/toggle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        </script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: [
+                        'Montserrat', 'Roboto'
+                    ]
+                }
+            });
+        </script>
+    </body>
+
+    </html>

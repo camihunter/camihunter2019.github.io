@@ -1,0 +1,29 @@
+@media only screen and (min-width: 35.5em) {
+    main, footer {
+        max-width: 95%;
+    }
+    
+    .navigation {
+        display: flex;
+        
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+        flex: 1 1 100%;
+    }
+    
+    figure {
+        margin: 20px 30px
+    }
+
+    .imagegallery {
+        display: grid;
+        max-width:100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+}
