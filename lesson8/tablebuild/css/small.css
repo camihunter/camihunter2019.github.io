@@ -19,8 +19,7 @@ th {
 }
 
 tbody tr {
-    background-color: #e7f0ed;
-        
+    background-color: #e7f0ed;    
 }
 
 tbody tr:nth-child(odd) {
