@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
+main {
+    
+    justify-content: center;
+}
+
 table {
     color: #000000;
     font-family: Ubuntu, sans-serif;
