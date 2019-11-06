@@ -13,27 +13,26 @@ table {
 
 }
 
-thead td {
-    font-size: 3rem;
-}
-
-th {
+caption {
     background-color: hsl(188, 35%, 63%);
     color: #000000;
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: 7px 0;
+}
+
+th, #highlight {
+    background-color: #628ca6;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 tbody tr {
     background-color: #e7f0ed;    
 }
 
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(even) {
     background-color: #e7ffed;
-}
-
-tbody tr:first-child, #highlight {
-    background-color: #628ca6;
-    color: #ffffff;
 }
 
  tfoot {
