@@ -1,62 +1,84 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <title>Cami's CIT 230 Class Elemental Weather Homepage</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="The gallery page for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
-    </head>
+<head>
+    <title>Cami's CIT 230 Class Elemental Weather Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="The gallery page for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
 
-    <body>
-        <header>
-            <img id="logo" src="images/wind_icon.svg"
-                alt="blue wind vector drawing with three simple lines lines representing wind blowing">
-            <section class="headings">
-                <h1>Elemental Weather</h1>
-                <div class="m">"Keeping you updated on Idaho's weather"</div>
-            </section>
-        </header>
+<body>
+    <header>
+        <img id="logo" src="images/wind_icon.svg"
+            alt="blue wind vector drawing with three simple lines lines representing wind blowing">
+        <section class="headings">
+            <h1>Elemental Weather</h1>
+            <div class="m">"Keeping you updated on Idaho's weather"</div>
+        </section>
+    </header>
 
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="../../lesson6/preston-6.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#" class="active">Storm Center</a></li>
-                <li><a href="../../lesson7/gallerypage/gallery-7.html">Gallery</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="active">Storm Center</a></li>
+            <li><a href="../../lesson7/gallerypage/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
 
-        <form>
-            <input >
-        </form>
-    </body>
+    <form method="GET" method="thanks.html">
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label>Full Name*<input type="text" name="name" required></label>
+            <label>Email<input type"email" name="email" placeholder="myemail@gmail.com"></label>
+            <label>Phone Number*<input type="tel" name="phone" required></label>
+            <label>Zip Code*<input type="number" name="zip" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label>Storm Date<input type="date" name="date"></label>
+            <label>Storm Type<input list="datalist">
+                <datalist id="datalist">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </label>
+            <label>Storm Severity<in</label>
+        </fieldset>
 
-    <footer>
-            <span id="date">
-            </span>
-        </footer>
-        <script src="js/progressiveload.js"></script>
-        <script src="js/date.js"></script>
-        <script src="js/toggle.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
-        </script>
-        <script>
-            WebFont.load({
-                google: {
-                    families: [
-                        'Montserrat', 'Roboto'
-                    ]
-                }
-            });
-        </script>
-        </html>
+    </form>
+</body>
+
+<footer>
+    <span id="date">
+    </span>
+</footer>
+<script src="js/progressiveload.js"></script>
+<script src="js/date.js"></script>
+<script src="js/toggle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+</script>
+<script>
+    WebFont.load({
+        google: {
+            families: [
+                'Montserrat', 'Roboto'
+            ]
+        }
+    });
+</script>
+
+</html>
