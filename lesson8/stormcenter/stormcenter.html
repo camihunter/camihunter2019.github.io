@@ -37,21 +37,29 @@
     </nav>
 
     <main>
-        <form method="GET" method="thanks.html">
+        <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Info</legend>
-                <label for="name">Full Name*<input type="text" name="name" required></label>
-                <label for="email">Email<input type"email" name="email" placeholder="myemail@gmail.com"></label>
-                <label for="phone">Phone Number*<input type="tel" name="phone" placeholder="###-###-####"
-                        required></label>
-                <label for="num">Zip Code*
-                    <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)"
-                        autocomplete="shipping postal-codep" required></label><br>
+                <label for="name" class="top">Full Name*
+                    <input type="text" name="name" required autocomplete="name" pattern=[A-Za-z]{5,50}></label>
+                <label for="email" class="top">Email
+                    <input type="email" name="email" placeholder="myemail@gmail.com">
+                </label>
+                <label for="phone" class="top">Phone Number*
+                    <input type="tel" name="phone" placeholder="###-###-####" required>
+                </label>
+                <label for="num" class="top">Zip Code*
+                    <input type="number" id="num" name="ship-zip" pattern="(\d{5}([\-]\d{4})?)"
+                        autocomplete="shipping postal-code" required>
+                </label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label for="date">Storm Date<input type="date" name="date"></label>
-                <label>Storm Type<input list="datalist">
+                <label for="date" class="top">Storm Date
+                    <input type="date" name="date">
+                </label>
+                <label class="top">Storm Type
+                    <input list="datalist">
                     <datalist id="datalist">
                         <option value="Blizzard">
                         <option value="Flash Flood">
@@ -79,8 +87,9 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
-                <label for="stormregion">
-                    <select name="stormregion">
+                <br>
+                <label for="stormregion" class="top"> Storm Region
+                    <select name="stormregion" >
                         <option selected disabled>Select Region</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
@@ -88,22 +97,23 @@
                     </select>
                 </label>
                 <div class="dangerradio">User In Danger
-                    <label for="dangeryes">
+                    <label for="dangeryes" class="sbs">
                         <input type="radio" id="dangeryes" name="danger" value="yes">Yes
                     </label>
-                    <label for="dangermaybe">
+                    <label for="dangermaybe" class="sbs">
                         <input type="radio" id="dangermaybe" name="danger" value="maybe">Maybe
                     </label>
-                    <label for="dangerno">
+                    <label for="dangerno" class="sbs">
                         <input type="radio" id="dangerno" name="danger" value="no">No
                     </label>
                 </div>
-                <legend>Additional information or comments</legend>
-                <textarea name="comments" rows="7" cols="50"></textarea>
-                <label>
-                    <input class="submitbutton" type="submit" name="submit" value="Send Information">
+                <label class="top">Additional information or comments
+                    <textarea name="comments" rows="7" cols="50"></textarea>
                 </label>
             </fieldset>
+            <label>
+                <input class="submitBtn" type="submit" name="submit" value="Send Information">
+            </label>
         </form>
     </main>
 </body>
