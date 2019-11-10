@@ -65,6 +65,7 @@ nav {
     background-color: #fed766;
     color: #212831;
 }
+
 .navigation {
     list-style-type: none;
     width: 100%;
@@ -94,37 +95,58 @@ nav {
 .responsive li {
     display: block;
 }
+
 /* End Nav Bar */
 
 /* Main Image Section */
 
 main {
+    width: 400px;
     justify-content: center;
+    margin: 0 auto;
+}
+
+fieldset,
+label {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
+    justify-content: left;
 }
+
+fieldset {
+    background-color: #fed86688;
+}
+
+label, form div{
+    margin: 0 20px;
+    padding: 15px 0;
+}
+
+.flexly {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+#ratingvalue {
+    margin: 0 20px;
+}
+
+.dangerradio label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 h2 {
-    display:flex;
-    justify-content: center;
-}
-figure {
-    box-shadow: 10px 5px 15px #787878;
+    display: flex;
     justify-content: center;
 }
 
-figcaption {
-    font-style: italic;
-    font-size: .8rem;
-    margin: 2px 5px;
-}
-
-.imagegallery img {
-    max-width: 100%;
-}
 /* Footer Section */
 
 footer {
+    margin: 0 auto;
     padding: 20px 0;
     text-align: center;
 }

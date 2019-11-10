@@ -15,15 +15,8 @@
         flex: 1 1 100%;
     }
     
-    figure {
-        margin: 20px 30px
-    }
-
-    .imagegallery {
-        display: grid;
-        max-width:100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+    footer {
+        margin: 0 100px;
     }
     
 }
