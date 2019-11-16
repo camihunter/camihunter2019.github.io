@@ -8,7 +8,7 @@
     <meta name="description"
         content="The gallery page for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -37,25 +37,26 @@
     </nav>
 
     <main>
+        <h2>Storm Center</h2>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Info</legend>
-                <label for="name" class="top">Full Name*
-                    <input type="text" name="name" required autocomplete="name" pattern=[A-Za-z]{5,50}></label>
-                <label for="email" class="top">Email
+                <label class="top">Full Name*
+                    <input type="text" name="name" required autocomplete="name" pattern=[A-Za-z ]{5,}></label>
+                <label class="top">Email
                     <input type="email" name="email" placeholder="myemail@gmail.com">
                 </label>
-                <label for="phone" class="top">Phone Number*
+                <label class="top">Phone Number*
                     <input type="tel" name="phone" placeholder="###-###-####" required>
                 </label>
-                <label for="num" class="top">Zip Code*
-                    <input type="number" id="num" name="ship-zip" pattern="(\d{5}([\-]\d{4})?)"
+                <label class="top">Zip Code*
+                    <input type="number" id="num" name="ship-zip"
                         autocomplete="shipping postal-code" required>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label for="date" class="top">Storm Date
+                <label class="top">Storm Date
                     <input type="date" name="date">
                 </label>
                 <label class="top">Storm Type
@@ -69,7 +70,7 @@
                         <option value="Tornado">
                     </datalist>
                 </label>
-                <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp; <br>
+                <label class="flexly">Rating: &nbsp;&nbsp;&nbsp; <br>
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
@@ -88,7 +89,7 @@
                     <option value="10">
                 </datalist>
                 <br>
-                <label for="stormregion" class="top"> Storm Region
+                <label class="top"> Storm Region
                     <select name="stormregion" >
                         <option selected disabled>Select Region</option>
                         <option value="Preston">Preston</option>
@@ -97,13 +98,13 @@
                     </select>
                 </label>
                 <div class="dangerradio">User In Danger
-                    <label for="dangeryes" class="sbs">
+                    <label class="sbs">
                         <input type="radio" id="dangeryes" name="danger" value="yes">Yes
                     </label>
-                    <label for="dangermaybe" class="sbs">
+                    <label class="sbs">
                         <input type="radio" id="dangermaybe" name="danger" value="maybe">Maybe
                     </label>
-                    <label for="dangerno" class="sbs">
+                    <label class="sbs">
                         <input type="radio" id="dangerno" name="danger" value="no">No
                     </label>
                 </div>
@@ -116,8 +117,6 @@
             </label>
         </form>
     </main>
-</body>
-
 <footer>
     <span id="date">
     </span>
@@ -137,5 +136,6 @@
         }
     });
 </script>
+</body>
 
 </html>
