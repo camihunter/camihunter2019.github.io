@@ -113,6 +113,8 @@ h2 {
 figure {
     box-shadow: 10px 5px 15px #787878;
     justify-content: center;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 figcaption {
@@ -127,6 +129,7 @@ figcaption {
 /* Footer Section */
 
 footer {
+    margin: 0 auto;
     padding: 20px 0;
     text-align: center;
 }
