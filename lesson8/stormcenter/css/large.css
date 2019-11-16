@@ -1,6 +1,8 @@
 @media (min-width: 64em) {
 footer {
-        max-width: 95%;
+        max-width: 900px;
+        width: 95%;
+        margin: auto;
     }
     
 }
