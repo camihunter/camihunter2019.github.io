@@ -5,12 +5,13 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        // console.table(jsonObject);
+         console.table(jsonObject);
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
 
 
             let card = document.createElement('section');
+            let div = document.createElement('div');
             let h3 = document.createElement('h3');
             let motto = document.createElement('h4');
             let founded = document.createElement('p');
@@ -24,14 +25,15 @@ fetch(requestURL)
                 motto.textContent = towns[i].motto;
                 founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 population.textContent = 'Population: ' + towns[i].currentPopulation;
-                population.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+                rainfall.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + ' in';
                 image.setAttribute('src', towns[i].photo);
                 image.setAttribute('alt', towns[i].name + 'Idaho');
-                card.appendChild(h3);
-                card.appendChild(motto);
-                card.appendChild(founded);
-                card.appendChild(population);
-                card.appendChild(rainfall);
+                card.appendChild(div);
+                div.appendChild(h3);
+                div.appendChild(motto);
+                div.appendChild(founded);
+                div.appendChild(population);
+                div.appendChild(rainfall);
                 card.appendChild(image);
 
                 document.querySelector('div.cards').appendChild(card);

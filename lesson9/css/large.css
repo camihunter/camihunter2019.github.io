@@ -1,0 +1,19 @@
+@media (min-width: 64em) {
+    footer, main {
+            width: 95%;
+            margin: auto;
+        }
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        width: 85%;
+        height: auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+        
+    }
