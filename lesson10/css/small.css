@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&C7Roboto&display=swap');
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+footer {
+    background-color: #BCE7FD;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#pancakebanner {
+    background-color: #fed766;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #000000;
+    margin: -20px 0 0 20px;
+    font-size: .9rem;
+}
+
+#logo {
+    width: 120px;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #212831;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a.active {
+    background-color: #fed766;
+    color: #212831;
+}
+.navigation {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a:hover {
+    background-color: #d27f0f;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.responsive li {
+    display: block;
+}
+/*End Nav Bar */
+
+main div {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px 0;
+}
+/* Banner Section */
+
+.herodiv {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#heroimage {
+    width: 100%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 4rem;
+    left: 20px;
+    line-height: .5;
+    padding: 5px;
+    background: radial-gradient(#fed766, #d27f0f);
+    opacity: .9;
+}
+
+/* Five Day Forcast Section */
+
+.forecast {
+    display:none;
+}
+
+
+
+/* Article Section */
+
+.weatherarticle {
+    background-color: #fed86688;
+    opacity: 100%;
+    padding: 10px 20px;
+}
+
+
+
+.weatherarticle img {
+    max-width: 100%;
+}
+
+/* Contact Info */
+.contactinfo {
+    clear: both;
+    display: block;
+    text-align: center;
+    background-color: #fed86688; 
+}
+
+.prestonmap {
+    display: none;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+
+}

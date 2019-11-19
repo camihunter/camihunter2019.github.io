@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35.5em) {
+@media only screen and (min-width: 37em) {
 
     main,
     footer {
@@ -23,9 +23,7 @@
         width: 100%;
         margin: .5rem auto;
         display: flex;
-        flex-wrap: wrap;
-        background-color: #fed86688;
-        opacity: 100%;
+        flex-direction: row;
     }
 
     section:nth-child(odd) {
@@ -33,7 +31,6 @@
     }
 
     section div, section img {
-        width: 48%;
         padding: 15px;
     }
 

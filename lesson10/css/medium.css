@@ -1,0 +1,73 @@
+@media only screen and (min-width: 37.5em) {
+    main, footer {
+        margin: 0 100px;
+    }
+    
+    .navigation {
+        display: flex;
+        
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+        flex: 1 1 100%;
+
+	}
+
+    main, footer {
+        margin: 0 50px;
+    }
+
+    .forecast {
+        display: block;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    table {
+        border: 1px solid #212831;
+        border-collapse: collapse;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .forecast th {
+        border: 1px solid #212831;
+        height: 30px;
+        background-color: #1e6382;
+        color: #ffffff;
+    }
+    
+    .forecast td {
+        border: 1px solid #212831;
+        height: 60px;
+    }
+
+    .weatherarticle {
+        padding: 10px 40px;
+        margin-bottom: 2em;
+    }
+
+    .weatherarticle img {
+        max-width: 40%;
+        box-shadow: 5px 5px 15px grey;
+        float: right;
+        margin: 0 0 20px 10px;
+    }
+
+    .contactinfo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .comtactinfo img {
+        max-width: 100%;
+    }
+    .prestonmap {
+        display: block;
+    }
+    
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cami's CIT 230 Class Elemental Weather Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="The Preston Idaho for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/pancakes.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="pancakebanner"></div>
+        <img id="logo" src="images/wind_icon.svg"
+            alt="blue wind vector drawing with three simple lines lines representing wind blowing">
+        <section class="headings">
+            <h1>Elemental Weather</h1>
+            <div class="m">"Keeping you updated on Idaho's weather"</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallerypage/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="herodiv">
+                <h2>Preston Idaho</h2>
+                <!-- <source src="images/herolesson6_650px.jpg" media="(min=width:599px) and (max-width: 1023px)">
+                        <source src="images/herolesson6_650px.jpg" media="(min=width:1024px)">-->
+                <picture>
+                    <img id="heroimage" src="images/herolesson6_650px.jpg" alt="green grass with a blue sky" srcset="images/herolesson6_300px.jpg 300w,
+                    images/herolesson6_400px.jpg 600w,
+                        images/herolesson6_650px.jpg 1200w,
+                        images/herolesson6_1300px.jpg 2048w" 
+                        sizes="(max-width: 400px) 400px,
+                                (max-width: 750px) 650px,
+                                1300px">
+                </picture>
+                <div class="weathersummary">
+                    <h3>Weather Summary</h3><br>
+                    <p>Currently: Sunny</p>
+                    <p>High <span id="hightemp">50</span> &deg;F</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
+                    <p>Humidity: 69%</p>
+                    <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+                </div>
+
+        </section>
+            <div class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="weatherarticle">
+            <h3>Goodbye Fall</h3>
+            <img src="images/frozenleaf768px.jpg" alt="fall leaf covered in frost">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Vulputate ut pharetra sit amet aliquam id. Morbi quis commodo odio aenean
+                sed adipiscing. Interdum velit laoreet id donec ultrices. Rhoncus mattis rhoncus urna neque viverra
+                justo nec. Nunc id cursus metus aliquam eleifend mi. Vel orci porta non pulvinar neque laoreet.
+                Nulla facilisi nullam vehicula ipsum a arcu cursus. Elementum sagittis vitae et leo duis ut diam
+                quam nulla. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Gravida cum
+                sociis natoque penatibus et. Elementum pulvinar etiam non quam lacus suspendisse. Volutpat commodo
+                sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Commodo sed egestas egestas
+                fringilla phasellus. Enim tortor at auctor urna. Maecenas sed enim ut sem viverra aliquet eget sit.
+            </p>
+        </section>
+        <section class="contactinfo">
+            <div>
+                <h3>Contact Information</h3>
+                <p>Elemental Weather<br>
+                    70 West 400 South<br>
+                    Preston, ID 83267</p>
+            </div>
+            <div class="prestonmap">
+                <img src="images/preston_map.png" alt="map of Preston Idaho">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span id="date">
+        </span>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/pancakes.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Montserrat', 'Roboto'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
