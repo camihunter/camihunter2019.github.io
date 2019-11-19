@@ -1,19 +1,29 @@
 @media (min-width: 64em) {
-    footer, main {
-            width: 95%;
-            margin: auto;
-        }
-    div.cards {
-        grid-template-columns: 1fr 1fr 1fr;
+
+    footer,
+    main {
+        width: 95%;
+        margin: auto;
     }
 
-    section {
-        width: 85%;
-        height: auto;
-        padding: 0 20px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
+    footer {
+        margin-top: 40px;
     }
+
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
         
     }
+
+    .cards section {    
+        line-height: .9rem;
+        padding: 25px 0;
+        width: 100%;
+        margin: .5rem 15;
+        display: grid;
+        background-color: #fed86688;
+        opacity: 100%;
+
+    }
+}
