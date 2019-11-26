@@ -55,10 +55,10 @@
                 </picture>
                 <div class="weathersummary">
                     <h3>Weather Summary</h3><br>
-                    <p>Currently: Sunny</p>
+                    <p>Currently: <span id="current-temp"></span>Sunny</p>
                     <p>High <span id="hightemp">50</span> &deg;F</p>
                     <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
-                    <p>Humidity: 69%</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
                     <p>Wind Speed: <span id="windspeed">10</span> mph</p>
                 </div>
 
@@ -120,6 +120,7 @@
         <span id="date">
         </span>
     </footer>
+    <script src="js/forecastapi.js"></script>
     <script src="js/date.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/pancakes.js"></script>
