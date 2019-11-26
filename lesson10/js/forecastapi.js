@@ -15,21 +15,23 @@ fetch(weatherapiURL)
         let speed = document.getElementById('windspeed');
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon;
         const desc = jsObject.weather[0].description;
-        windchill(temp.texContent, speed.textContent);
+        windChill(temp.textContent, speed.textContent);
     });
 
 
-function windChill(tempF, speed) {
-    var windchilltemp;
-    if (tempF <= 50 && speed > 3) {
-        windchilltemp = 35.74 + (.6215 * tempF) - (35.75 * Math.pow(speed, .16)) + (.4275 * tempF * Math.pow(speed, .16));
+
+    
+function windChill(temp, speed) {
+    var windchilltemp = 0;
+    if (temp <= 50 && speed > 3) {
+        windchilltemp = 35.74 + (.6215 * temp) - (35.75 * Math.pow(speed, .16)) + (.4275 * temp * Math.pow(speed, .16));
         windchilltemp = Math.round(windchilltemp);
-        document.getElementById('windchill').textContent = windchilltemp + "&deg";
-        F;
+        document.getElementById('windchill').innerHTML = windchilltemp + "&#176;F";
+        ;
     } else {
         windchilltemp = "N/A";
         document.getElementById('windchill').textContent = windchilltemp;
     }
-     //console.log("Current Temp = " + tempF + ", Wind Speed = " + speed + ", Wind Chill = " + windchilltemp)
+     console.log("Current Temp = " + temp + ", Wind Speed = " + speed + ", Wind Chill = " + windchilltemp)
     console.log('windchilltemp');
 }
