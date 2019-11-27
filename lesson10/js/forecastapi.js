@@ -38,4 +38,4 @@ fetch(forecastAPI)
                 }
                 console.log("Current Temp = " + temp + ", Wind Speed = " + speed + ", Wind Chill = " + windchilltemp)
                 console.log('windchilltemp');
-            }
+            };
