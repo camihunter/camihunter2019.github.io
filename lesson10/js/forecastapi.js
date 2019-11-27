@@ -18,12 +18,12 @@ fetch(weatherapiURL)
         windChill(temp.textContent, speed.textContent);
     });
 
-/*const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=" + townID + "&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
-fetch(forecastAPI)
+const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
+fetch(forecastapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-            //console.log(jsObject);
-*/
+            console.log(jsObject);
+    });
 
 
             function windChill(temp, speed) {
@@ -36,6 +36,7 @@ fetch(forecastAPI)
                     windchilltemp = "N/A";
                     document.getElementById('windchill').textContent = windchilltemp;
                 }
-                console.log("Current Temp = " + temp + ", Wind Speed = " + speed + ", Wind Chill = " + windchilltemp)
-                console.log('windchilltemp');
+                //console.log("Current Temp = " + temp + ", Wind Speed = " + speed + ", Wind Chill = " + windchilltemp)
+                //console.log('windchilltemp');
             };
+
