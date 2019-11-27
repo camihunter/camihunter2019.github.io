@@ -1,3 +1,19 @@
+/*function townforecast ()
+const id = "";
+
+switch (city) {
+    case "Preston Idaho":
+        id = "5604473";
+        break;
+    case "Fish Haven Idaho":
+        id = "5445439";
+        break;
+    case "Soda Springs Idaho":
+        id = "5678757";
+        break;
+}
+console.log(id);
+*/
 //const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?" + id + "&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
 const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
 
