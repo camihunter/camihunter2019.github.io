@@ -18,6 +18,11 @@ fetch(weatherapiURL)
         windChill(temp.textContent, speed.textContent);
     });
 
+    const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=" + townID + "&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
+fetch(forecastAPI)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        //console.log(jsObject);
 
 
     
