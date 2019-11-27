@@ -40,42 +40,43 @@
 
     <main>
         <section class="herodiv">
-                <h2>Preston Idaho</h2>
-                <!-- <source src="images/herolesson6_650px.jpg" media="(min=width:599px) and (max-width: 1023px)">
+            <h2>Preston Idaho</h2>
+            <!-- <source src="images/herolesson6_650px.jpg" media="(min=width:599px) and (max-width: 1023px)">
                         <source src="images/herolesson6_650px.jpg" media="(min=width:1024px)">-->
-                <picture>
-                    <img id="heroimage" src="images/prestonhero_650px.jpg" alt="green grass with a blue sky" srcset="images/herolesson6_300px.jpg 300w,
+            <picture>
+                <img id="heroimage" src="images/prestonhero_650px.jpg" alt="green grass with a blue sky" srcset="images/herolesson6_300px.jpg 300w,
                     images/prestonhero_400px.jpg 600w,
                         images/prestonhero_650px.jpg 1200w,
-                        images/prestonhero_1300px.jpg 2048w" 
-                        sizes="(max-width: 500px) 400px,
+                        images/prestonhero_1300px.jpg 2048w" sizes="(max-width: 500px) 400px,
                                 (max-width: 850px) 650px,
                                 1300px">
-                </picture>
-                <div class="weathersummary">
-                    <h3>Weather Summary</h3><br>
-                    <p>Currently:  <span id="description"></span></p>
-                    <p>Current Temp: <span id="temp"></span> &deg;F</p>
-                    <p>High <span id="hightemp">50</span> &deg;F</p>
-                    <p>Wind Chill: <span id="windchill"></span></p>
-                    <p>Humidity: <span id="humidity"></span>%</p>
-                    <p>Wind Speed: <span id="windspeed">10</span> mph</p>
-                </div>
+            </picture>
+            <div class="weathersummary">
+                <h3>Weather Summary</h3><br>
+                <p>Currently: <span id="description"></span></p>
+                <p>Current Temp: <span id="temp"></span> &deg;F</p>
+                <p>High <span id="hightemp">50</span> &deg;F</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+            </div>
 
         </section>
-            <div class="forecast">
-                <h3>5 Day Forecast</h3>
-                <table>
-                    <thead> 
-                        <tr class= "tablehead">
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tabledata">
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr class="tablehead">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="weathericon">
+                    </tr>
+                    <tr class="tabledata">
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </section>
 
         <section class="weatherarticle">
@@ -107,9 +108,10 @@
     </main>
 
     <footer>
-            &copy; <span id="currentyear"></span> Elemental Weather | Cami Hunter | 
+        &copy; <span id="currentyear"></span> Elemental Weather | Cami Hunter |
         <span id="date">
-        </span>  <p>Weather data provided by <a href="https://openweathermap.org/">Open Weather</a></p>
+        </span>
+        <p>Weather data provided by <a href="https://openweathermap.org/">Open Weather</a></p>
     </footer>
     <script src="js/forecastapi.js"></script>
     <script weathercode(5604473)></script>

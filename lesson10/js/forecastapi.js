@@ -32,13 +32,18 @@ fetch(forecastapiURL)
                     weekday: 'short'
                 };
                 let weekday = document.createElement('th');
+                let weathericon = document.createElement('img');
                 let rowdata = document.createElement('td');
 
+                weathericon.setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
+                weathericon.setAttribute('alt', jsObject.list[i].weather[0].description)
                 weekday.textContent = new Date(jsObject.list[i].dt_txt).toLocaleDateString('en-US', options);
                 rowdata.textContent = jsObject.list[i].main.temp.toFixed(0);
 
+                //console.log('https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png')
                 //console.log(jsObject.list[i].main.temp.toFixed(0))
                 document.querySelector('.tablehead').appendChild(weekday);
+                document.querySelector('.tabledata').appendChild(weathericon);
                 document.querySelector('.tabledata').appendChild(rowdata);
             }
         }
