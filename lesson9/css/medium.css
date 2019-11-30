@@ -30,11 +30,11 @@ h4 {
         flex-direction: row;
     }
 
-    section:nth-child(odd) {
+    .cards section:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
-    section div, section img {
+    .cards section div, section img {
         padding: 15px;
     }
 

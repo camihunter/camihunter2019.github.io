@@ -108,11 +108,11 @@ main {
     text-align: center;
 }
 
-h3 {
+.cards h3 {
     font-size: 1.8rem;
 }
 
-h4 {
+.cards h4 {
     font-style: italic;
 }
 
@@ -123,7 +123,7 @@ div.cards {
     justify-content: center;
 }
 
-section div {
+.cards section div {
     margin: auto;
 }
 
@@ -154,4 +154,4 @@ footer {
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
-}8sprv
+}

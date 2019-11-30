@@ -17,6 +17,11 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -34,7 +39,7 @@ header {
 }
 
 #pancakebanner {
-    background-color: #fed766;
+    background-color: #fde9ab;
     color: #000000;
     display: flex;
     justify-content: center;
@@ -69,7 +74,7 @@ nav {
 }
 
 .navigation a.active {
-    background-color: #fed766;
+    background-color: #fde9ab;
     color: #212831;
 }
 
@@ -104,7 +109,6 @@ nav {
 }
 
 
-/*End Nav Bar */
 main div {
     margin: 10px 0;
 }
@@ -132,7 +136,7 @@ section {
     left: 20px;
     line-height: .5;
     padding: 5px;
-    background: radial-gradient(#fed766, #d27f0f);
+    background: radial-gradient(#fde9ab, #fed766);
     opacity: .9;
 }
 
@@ -145,7 +149,7 @@ section {
 
 /* Article Section - City Pages */
 .weatherarticle {
-    background-color: #fed86688;
+    background-color: #fde9ab;
     opacity: 100%;
     padding: 10px 20px;
 }
@@ -160,7 +164,7 @@ section {
     clear: both;
     display: block;
     text-align: center;
-    background-color: #fed86688;
+    background-color: #fde9ab;
 }
 
 .prestonmap {
@@ -168,18 +172,13 @@ section {
 }
 
 
-/* Main Image Section- Gallery Page */
+/* -----------Gallery Page------------- */
 main {
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: auto;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
 }
 
 figure {
@@ -273,12 +272,46 @@ input#rating {
 }
 
 
-h2 {
-    display: flex;
+/*------------homepage----------*/
+.cards h3 {
+    font-size: 1.8rem;
+}
+
+.cards h4 {
+    font-style: italic;
+}
+
+div.cards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
-/* Footer */
+.cards section div {
+    margin: auto;
+}
+
+.cards img {
+    padding: 15px 20px;
+    max-width: 300px;
+    margin: 0;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.cards section {    
+    line-height: .9rem;
+    padding: 25px 0;
+    width: 100%;
+    margin: .5rem auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #fde9ab;
+    opacity: 100%;
+}
+
+/*--------------- Footer-------------- */
 footer {
     margin: 0 auto;
     padding: 20px 0;

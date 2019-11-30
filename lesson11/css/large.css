@@ -1,8 +1,10 @@
 @media (min-width: 64em) {
 
-    main,
-    footer {
-        margin: 0 130px;
+    footer,
+    main {
+        width: 95%;
+        max-width: 900px;
+        margin: auto;
     }
 
     /* Gallery Page */
@@ -19,5 +21,23 @@
 
     figure:hover {
         box-shadow: 10px 5px 15px #000000;
+    }
+
+    /*-----------Homepage-----------*/
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        
+    }
+
+    .cards section {    
+        line-height: .9rem;
+        padding: 25px 0;
+        width: 100%;
+        margin: .5rem 15;
+        display: grid;
+        background-color: #fed86688;
+        opacity: 100%;
+
     }
 }
