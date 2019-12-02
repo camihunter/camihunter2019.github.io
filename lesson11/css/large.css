@@ -7,7 +7,17 @@
         margin: auto;
     }
 
-    /* Gallery Page */
+
+     /* --------Forcast Section - City Pages--------- */
+     .forecast td {
+         font-size: 1.2rem;
+     }
+
+     .forecast img {
+        width: 5rem;
+
+
+    /* -------------Gallery Page------------ */
     .imagegallery {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
