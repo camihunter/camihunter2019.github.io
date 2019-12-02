@@ -20,6 +20,8 @@ h6 {
 h2 {
     display: flex;
     justify-content: center;
+    padding: 10px 0;
+    font-weight: bold;
 }
 
 p {
@@ -221,6 +223,8 @@ form div {
     margin: 0 20px 10px 20px;
     padding-top: 1rem;
     color: #022b3a;
+    display: flex;
+    flex-direction: column;
 }
 
 form label.top input,
@@ -235,6 +239,9 @@ form label.top select {
     background-color: rgba(2, 43, 58, .1)
 }
 
+.top textarea {
+    max-width: 20rem;
+}
 form label.sbs,
 label.box {
     display: block;
@@ -274,15 +281,17 @@ input#rating {
 
 /*------------homepage----------*/
 .cards h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .cards h4 {
     font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div.cards {
-    margin: auto;
+   
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -300,11 +309,14 @@ div.cards {
     margin: auto;
 }
 
-.cards section {    
+.cards p {
     line-height: .9rem;
-    padding: 25px 0;
+}
+.cards section {    
+    padding: 0;
     width: 100%;
-    margin: .5rem auto;
+    margin: auto;
+    margin-bottom: 10px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-color: #fde9ab;

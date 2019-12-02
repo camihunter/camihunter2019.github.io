@@ -27,6 +27,7 @@
     div.cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+        margin: auto;
         
     }
 
@@ -34,10 +35,20 @@
         line-height: .9rem;
         padding: 25px 0;
         width: 100%;
-        margin: .5rem 15;
         display: grid;
         background-color: #fed86688;
         opacity: 100%;
+    }
 
+    .cards h4 {
+        line-height: 1.4rem;
+    }
+
+    .cards h3 {
+        padding: 0 0 15px 0;
+    }
+
+    * {
+        box-sizing: border-box;
     }
 }

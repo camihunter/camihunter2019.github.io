@@ -5,23 +5,22 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.log(jsonObject);
+        //console.log(jsonObject);
         const towns = jsonObject['towns'];
-        const eventsarray = jsonObject['towns[i].events']
+
         for (let i = 0; i < towns.length; i++) {
-            for (let j = 0; j < eventsarray.length; j++) {
+            if (towns[i].name == /* "Fish Haven" ||  towns[i].name == */ "Preston" /* || towns[i].name == "Soda Springs" */ ) {
+                const eventsarray = towns[i].events;
+                let eventbox = document.createElement('ul');
 
-                let event = document.createElement('p');
-
-                if (towns[i].name == /* "Fish Haven" ||  towns[i].name == */ "Preston" /* || towns[i].name == "Soda Springs" */ ) {
-
-
-
-                    event.textContent = eventsarray[j];
-                    console.log(event);
+                for (let j = 0; j < eventsarray.length; j++) {
+                    let events = document.createElement('li');
+                    events.textContent = eventsarray[j];
+                    eventbox.appendChild(events);
+                    //console.log(events);
                 }
 
-                document.querySelector('div.events').appendChild(event);
+                document.querySelector('div.events').appendChild(eventbox);
             }
         }
     });

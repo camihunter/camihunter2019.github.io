@@ -6,21 +6,22 @@
     .navigation {
         display: flex;
         
-	}
+    }
+    
 	.navigation li:first-child {
 		display: none;
-	}
+    }
+    
 	.navigation li {
 		display: block;
         flex: 1 1 100%;
-
 	}
 
     main, footer {
         margin: 0 50px;
     }
 
- /* Forcast Section - City Pages */
+ /* --------Forcast Section - City Pages--------- */
     .forecast {
         display: block;
         width: 100%;
@@ -48,7 +49,7 @@
     }
 
 
-/* Weather Article - City Pages */
+/* --------Weather Article - City Pages-------- */
     .weatherarticle {
         padding: 10px 40px;
         margin-bottom: 2em;
@@ -74,7 +75,7 @@
     }
 
 
-/* Image Gallery Page */
+/* -----------Image Gallery Page--------- */
     figure {
         margin: 20px 30px
     }
@@ -94,7 +95,13 @@
         margin: .5rem auto;
         display: flex;
         flex-direction: row;
+        line-height: .9rem;
     }
+
+    .cards img {
+        max-width: 250px;
+    }
+    
 
     .cards section:nth-child(odd) {
         flex-direction: row-reverse;
