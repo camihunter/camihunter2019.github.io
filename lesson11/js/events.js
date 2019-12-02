@@ -25,4 +25,3 @@ fetch(requestURL)
         }
     });
 
-//document.getElementsByClassName('events').textContent = jsonObject.towns.events[j];

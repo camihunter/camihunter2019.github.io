@@ -1,20 +1,4 @@
-/*function townforecast ()
-const id = "";
-
-switch (city) {
-    case "Preston Idaho":
-        id = "5604473";
-        break;
-    case "Fish Haven Idaho":
-        id = "5445439";
-        break;
-    case "Soda Springs Idaho":
-        id = "5678757";
-        break;
-}
-console.log(id);
-*/
-//const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?" + id + "&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
+/* -------------Current Conditions---------------*/
 const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
 
 fetch(weatherapiURL)
@@ -35,6 +19,8 @@ fetch(weatherapiURL)
         windChill(temp.textContent, speed.textContent);
     });
 
+
+    /* -------------Five Day Forecast---------------*/
 const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=80308be28fe0d83661b5b1c7d8efff8f";
 fetch(forecastapiURL)
     .then((response) => response.json())
@@ -57,16 +43,13 @@ fetch(forecastapiURL)
                 rowdata.textContent = jsObject.list[i].main.temp.toFixed(0) + "\u00B0";
                 rowdata.appendChild(weathericon);
 
-                //console.log('https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png')
-                //console.log(jsObject.list[i].main.temp.toFixed(0))
                 document.querySelector('.tablehead').appendChild(weekday);
-                //document.querySelector('.tabledata').appendChild(weathericon);
                 document.querySelector('.tabledata').appendChild(rowdata);
             }
         }
     });
 
-
+/* -------------Windchill---------------*/
 function windChill(temp, speed) {
     var windchilltemp = 0;
     if (temp <= 50 && speed > 3) {
@@ -77,6 +60,31 @@ function windChill(temp, speed) {
         windchilltemp = "N/A";
         document.getElementById('windchill').textContent = windchilltemp;
     }
-    //console.log("Current Temp = " + temp + ", Wind Speed = " + speed + ", Wind Chill = " + windchilltemp)
-    //console.log('windchilltemp');
 };
+/* -------------Upcoming Events---------------*/
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        //console.log(jsonObject);
+        const towns = jsonObject['towns'];
+
+        for (let i = 0; i < towns.length; i++) {
+            if (towns[i].name == "Preston") {
+                const eventsarray = towns[i].events;
+                let eventbox = document.createElement('ul');
+
+                for (let j = 0; j < eventsarray.length; j++) {
+                    let events = document.createElement('li');
+                    events.textContent = eventsarray[j];
+                    eventbox.appendChild(events);
+                    //console.log(events);
+                }
+
+                document.querySelector('div.events').appendChild(eventbox);
+            }
+        }
+    });

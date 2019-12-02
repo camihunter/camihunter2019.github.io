@@ -314,6 +314,15 @@ input#rating {
     margin: 0 0 0 20px;
 }
 
+#thankspage {
+    max-width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#thankspage h3 {
+    text-align:  center;
+}
 
 
 /*------------homepage----------*/

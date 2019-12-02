@@ -101,7 +101,7 @@ nav {
 
 /* Main Image Section */
 
-main {
+main #gallery {
     width: 400px;
     margin: 0 auto;
 }
@@ -179,6 +179,10 @@ input#rating {
 h2 {
     display: flex;
     justify-content: center;
+}
+
+#thankspage {
+    max-width: 95%;
 }
 
 /* Footer Section */
