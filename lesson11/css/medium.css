@@ -27,8 +27,15 @@
         width: 100%;
         align-items: center;
         text-align: center;
+        background-color: #1e6382;
+        padding: 5px 0 20px 0;
+        align-items: center;
+        border-radius: 5px;
     }
-    
+    .forecast h3 {
+        color: #ffffff;
+    }
+
     table {
         border: 1px solid #212831;
         border-collapse: collapse;
@@ -39,13 +46,14 @@
     .forecast th {
         border: 1px solid #212831;
         height: 30px;
-        background-color: #1e6382;
-        color: #ffffff;
+        background-color: #fde9ab;
+        color: #000000;
     }
     
     .forecast td {
         border: 1px solid #212831;
         height: 60px;
+        background-color: #ffffff;
     }
 
 
@@ -57,7 +65,6 @@
 
     .weatherarticle img {
         max-width: 40%;
-        box-shadow: 5px 5px 15px grey;
         float: right;
         margin: 0 0 20px 10px;
     }
@@ -74,6 +81,10 @@
         display: block;
     }
 
+/* ----------Upcoming Events Section - City Pages--------- */
+.eventsbox {
+    margin-bottom: 20px;
+}
 
 /* -----------Image Gallery Page--------- */
     figure {
@@ -90,26 +101,21 @@
 
 /*-----------Homepage-------------*/
     .cards section {
-        max-width: 700px;
-        width: 100%;
+        max-width: 100%;
         margin: .5rem auto;
         display: flex;
         flex-direction: row;
         line-height: .9rem;
+        padding: 15px 0;
     }
 
     .cards img {
         max-width: 250px;
-        padding: 15px 20px;
     }
     
 
     .cards section:nth-child(odd) {
         flex-direction: row-reverse;
-    }
-
-    .cards section div, .cards section img {
-        padding: 15px;
     }
     
 }

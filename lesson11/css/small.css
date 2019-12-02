@@ -66,7 +66,7 @@ header {
 }
 
 
-/* Navigation Bar */
+/* -----------Navigation Bar----------- */
 nav {
     background-color: #212831;
     display: flex;
@@ -117,10 +117,11 @@ main div {
 
 section {
     padding: 20px 0;
+    border-radius: 15px;
 }
 
 
-/* Banner Section - City Pages */
+/* -----------Banner Section - City Pages----------- */
 .herodiv {
     position: relative;
     width: 100%;
@@ -131,7 +132,7 @@ section {
     width: 100%;
 }
 
-/* City Weather Summary Section - City Pages */
+/* -----------City Weather Summary Section - City Pages----------- */
 .weathersummary {
     position: absolute;
     top: 4rem;
@@ -143,13 +144,13 @@ section {
 }
 
 
-/* Five Day Forcast Section - City Pages*/
+/* -----------Five Day Forcast Section - City Pages----------- */
 .forecast {
     display: none;
 }
 
 
-/* Article Section - City Pages */
+/* -----------Article Section - City Pages----------- */
 .weatherarticle {
     background-color: #fde9ab;
     opacity: 100%;
@@ -158,15 +159,42 @@ section {
 
 .weatherarticle img {
     max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px grey;
 }
 
 
-/* Contact Info - City Pages */
+/* ----------Upcoming Events Section - City Pages--------- */
+.eventsbox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #1e6382;
+    color: #ffffff;
+
+}
+
+.eventsbox li {
+list-style-type: none;
+}
+
+.eventsbox ul {
+    padding: 0;
+}
+
+.events{
+    border: 0 0 4px 0 solid #ffffff;
+    margin: 0;
+}
+
+/* -----------Contact Info - City Pages----------- */
 .contactinfo {
     clear: both;
     display: block;
     text-align: center;
     background-color: #fde9ab;
+    margin-top: 10px;
 }
 
 .prestonmap {
@@ -204,7 +232,7 @@ figcaption {
 /*-------------Form Page------------*/
 form fieldset {
     border: 1px solid #022b3a;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 2rem 0;
     padding: .5rem 2% 1rem 2%;
 }
@@ -290,6 +318,10 @@ input#rating {
     flex-wrap: wrap;
 }
 
+.cards p {
+    color: #1e6382;
+}
+
 div.cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -302,11 +334,11 @@ div.cards {
 }
 
 .cards img {
-    padding: 0 20px 15px 20px;
     max-width: 300px;
     margin: 0;
-    border-radius: 50%;
     margin: auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px grey;
 }
 
 .cards p {
