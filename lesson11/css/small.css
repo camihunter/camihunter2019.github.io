@@ -281,7 +281,7 @@ input#rating {
 
 /*------------homepage----------*/
 .cards h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .cards h4 {
@@ -291,7 +291,6 @@ input#rating {
 }
 
 div.cards {
-   
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -299,10 +298,11 @@ div.cards {
 
 .cards section div {
     margin: auto;
+    max-height: fit-content;
 }
 
 .cards img {
-    padding: 15px 20px;
+    padding: 0 20px 15px 20px;
     max-width: 300px;
     margin: 0;
     border-radius: 50%;
