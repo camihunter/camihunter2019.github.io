@@ -6,8 +6,7 @@ console.log('pancakebanner')}*/
 function pancakes(){
     var weekday = new Date().getDay();
 
-    if (weekday === 0) {
+    if (weekday === 5) {
         document.getElementById("pancakes").innerhtml = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-
     }
 };

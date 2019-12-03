@@ -52,6 +52,11 @@
         height: 60px;
         background-color: #ffffff;
     }
+   .forecast td > * {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: auto;
+    }
 
 
 /* --------Weather Article - City Pages-------- */
@@ -76,7 +81,6 @@
     }
     .citymap {
         display: block;
-        box-shadow: 5px 5px 15px grey;
     }
 
 /* ----------Upcoming Events Section - City Pages--------- */

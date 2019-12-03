@@ -368,7 +368,7 @@ div.cards {
     line-height: .9rem;
 }
 .cards section {    
-    padding: 0;
+    padding: 0 0 20px 0;
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
