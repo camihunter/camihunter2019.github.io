@@ -57,7 +57,7 @@
 /* --------Weather Article - City Pages-------- */
     .weatherarticle {
         padding: 10px 40px;
-        margin-bottom: 2em;
+        margin-bottom: 20px;
     }
 
     .weatherarticle img {
@@ -74,8 +74,9 @@
     .comtactinfo img {
         max-width: 100%;
     }
-    .prestonmap {
+    .citymap {
         display: block;
+        box-shadow: 5px 5px 15px grey;
     }
 
 /* ----------Upcoming Events Section - City Pages--------- */
