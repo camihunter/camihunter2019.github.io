@@ -379,6 +379,21 @@ div.cards {
 }
 
 /*--------------- Footer-------------- */
+#wireframes {
+    
+    display: flex;
+    flex-direction: column;
+    color: #022b3a;
+}
+
+#wireframes a:link {
+    text-decoration: none;
+}
+
+#wireframes a:hover {
+    font-size: 1.1rem;
+}
+
 footer {
     margin: 0 auto;
     padding: 20px 0;
