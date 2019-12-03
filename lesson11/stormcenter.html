@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="The gallery page for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
+        content="The Storm Center page for Cami Hunter's CIT 230 Elemental Weather site for a class assignment at Brigham Young University-Idaho.">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -42,7 +42,7 @@
             <fieldset class="stormmain">
                 <legend>Contact Info</legend>
                 <label class="top">Full Name*
-                    <input type="text" name="name" required autocomplete="name" pattern=[A-Za-z ]{5,}></label>
+                    <input type="text" name="name" required autocomplete="name" pattern=[A-Za-z ]{5, }></label>
                 <label class="top">Email
                     <input type="email" name="email" placeholder="myemail@gmail.com">
                 </label>
@@ -50,7 +50,7 @@
                     <input type="tel" name="phone" placeholder="###-###-####" required>
                 </label>
                 <label class="top">Zip Code*
-                    <input type="number" id="num" name="ship-zip" autocomplete="shipping postal-code" required>
+                    <input id="zip" name="zip" type="text" pattern="[0-9]*" required>
                 </label>
             </fieldset>
             <fieldset class="stormmain">
