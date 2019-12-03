@@ -38,6 +38,22 @@
 
     <main>
         <h2>Welcome to Elemental Weather</h2>
+        <section>
+            <form method="get" action="signup.html" >
+                <fieldset id="signup">
+                    <h3 class="item-a">Get weather updates sent to your mobile device through text</h3>
+                    <label class="top item-b">Your Name
+                        <input type="text" name="name" autocomplete="name" pattern="[A-Za-z ]{5,}">
+                    </label>
+                    <label class="top item-b">Phone Number*
+                        <input type="tel" name="phone" placeholder="###-###-####" required>
+                    </label>
+                    <label>
+                        <input class="submitBtn" type="submit" name="submit" value="Get Weather Updates">
+                    </label>
+                </fieldset>
+            </form>
+        </section>
         <div class="cards"></div>
 
     </main>

@@ -327,6 +327,10 @@ input#rating {
 
 
 /*------------homepage----------*/
+ #signup {
+     display: flex;
+ }
+
 .cards h3 {
     font-size: 1.4rem;
 }
