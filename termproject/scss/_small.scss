@@ -1,1 +1,143 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&C7Raleway&display=swap');
+
+body {
+    font-family: $fontFamilymain;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: $backgroundColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontFamilyheading;
+}
+
+/*------------Nav Bar------------*/
+nav {
+    background-color: $neutralColor;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigation {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: none;
+    }
+
+    li:first-child {
+        display: block;
+    }
+
+    a:hover {
+        background-color: $actionColor;
+        color: #ffffff;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        padding: 3px 0;
+    }
+
+    a.active {
+        background-color: $backgroundColor;
+        opacity: 75%;
+        color: #000000;
+    }
+}
+
+.responsive li {
+    display: block;
+}
+
+/*------------Header------------*/
+header,
+footer {
+    display: flex;
+    background: $primaryColor;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*------------Main------------*/
+
+section {
+    background-color: #ffffff;
+}
+
+
+
+/*------------Footer------------*/
+footer {
+    flex-direction: column;
+    .nfooter {
+        margin: 0;
+    }
+}
+
+/*------------Home Page------------*/
+
+
+.grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: 1fr 1fr;
+    margin: $gutterSmall;
+
+    section {
+        margin: 10px;
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .textbox {
+        padding: 10px 20px 30px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+}
+
+.bttn {
+    display: block;
+    background-color: $actionColor;
+    color: #ffffff;
+    width: 140px;
+    padding: 5px;
+    border-radius: $radius;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+
+    :hover {
+        cursor: pointer;
+        padding: 25px;
+    }
+}

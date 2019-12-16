@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cami's CIT 230 Temple Inn & Suites Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="The homepage for Cami Hunter's CIT 230 Temple Inn and Suites website for a class assignment at Brigham Young University-Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img id="logo" src="" alt="">
+        <h1 class="heading">Temple Inn & Suites</h1>
+    </header>
+
+    <main class="grid">
+        <section>
+            <img src="images/entryhomepage_200x400.jpg" 
+            srcset="images/entryhomepage_400x300.jpg 400w,
+                        images/entryhomepage_300x450.jpg 300w,
+                        images/entryhomepage_200x400.jpg 200w" 
+                        sizes=
+                        "(max-width: 600px) 400px,
+                        (max-width: 900px) 300px, 
+                        300px" 
+                        class="leftcol"
+                alt="two tables with a glass on each in front of a couch next to a window.">
+            <div class="rightcol">
+                <h3>Your home away from home</h3>
+                <!-------------We take great pride in offering you a place to add to your temple experience away from home.
+                    <br><br>-->
+                <p>If you are planning a temple trip to Utah Valley, look no further. We will be happy to help
+                    you find the
+                    perfect accommodations to fit your needs.</p>
+                <a href="reservations.html" class="bttn">Book Now</a>
+            </div>
+        </section>
+
+        <section>
+            <img src="images/paysontemple_200x400.jpg" 
+            srcset="images/paysontemple_400x300.jpg 400w,
+                        images/paysontemple_300x450.jpg 300w,
+                        images/paysontemple_200x400.jpg 200w" 
+                        sizes=
+                        "(max-width: 600px) 400px,
+                        (max-width: 850px) 300px,
+                        300px" class="leftcol" alt="Payson Utah temple">
+            <div class="rightcol">
+                <h3>Payson Temple</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="nfooter">Temple Inn & Suites</h4>
+        4800 Montgomery Ln #300, Bethesada, MD 20814 |
+        &copy; <span id="currentyear"></span> All Rights Reserved
+        <script src="js/toggle.js"></script>
+    </footer>
+</body>
+
+</html>

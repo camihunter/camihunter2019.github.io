@@ -1,0 +1,58 @@
+.navigation {
+    display: flex;
+
+    li:first-child {
+        display: none;
+    }
+
+    li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+main {
+    padding: $gutterSmall;
+    margin: auto;
+}
+
+.grid {
+    section {
+        background: $backgroundColor;
+        position: relative;
+        padding-bottom: 20%;
+    }
+    img {
+        max-width: 85%;
+    }
+    h3 {
+        margin: 2px 0;
+    }
+    p {
+        margin: 5px 0 10px 0;
+    }
+    .textbox {
+        position: absolute;
+        background-color: #ffffff;
+        top: 60%;
+        left: 10%;
+    }
+}
+
+/*.grid {
+    grid-template-columns: 1fr;
+        section {
+            display: flex;
+            flex-direction: row
+        }
+        .rightcol {
+            position: absolute;
+            width: 300px;
+        }
+       .leftcol {
+           width: auto;
+           max-width: 100%;
+           height: 100%;
+       }
+}
+*/

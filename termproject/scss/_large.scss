@@ -1,0 +1,32 @@
+main {
+    padding: $gutterLarge;
+    margin: auto;
+}
+
+.grid {
+    grid-template-columns: 1fr;
+
+    section {
+        padding-bottom: 0;
+        margin-bottom: 2em;
+    }
+        .right {
+            margin-left: 35%;
+        }
+        img {
+            max-width: 65%;
+        }
+        h3 {
+            margin: 5px 0;
+        }
+        .textbox {
+            top: 30%;
+            left: 45%;
+            padding: 25px;
+        }
+        .boxright {
+            left: 0;
+            margin-right: 35%;
+        }
+
+}
